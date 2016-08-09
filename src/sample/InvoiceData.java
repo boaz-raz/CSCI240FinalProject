@@ -3,7 +3,7 @@ package sample;
 import java.time.LocalDate;
 
 /**
- * Created by Boazraz
+ * Created by Boaz Raz
  */
 public class InvoiceData {
 
@@ -12,7 +12,7 @@ public class InvoiceData {
     private String customerName;
     private String customerAddress;
     private String customerPhone;
-    private String jobDescroption;
+    private String jobDescription;
     private String customerBalance;
     private LocalDate dueDate;
 
@@ -21,7 +21,7 @@ public class InvoiceData {
         this.customerName = customerName;
         this.customerAddress = customerAddress;
         this.customerPhone = customerPhone;
-        this.jobDescroption = jobDescroption;
+        this.jobDescription = jobDescroption;
         this.customerBalance = customerBalance;
         this.dueDate = dueDate;
     }
@@ -50,12 +50,12 @@ public class InvoiceData {
         this.customerPhone = customerPhone;
     }
 
-    public String getJobDescroption() {
-        return jobDescroption;
+    public String getJobDescription() {
+        return jobDescription;
     }
 
-    public void setJobDescroption(String jobDescroption) {
-        this.jobDescroption = jobDescroption;
+    public void setJobDescription(String jobDescription) {
+        this.jobDescription = jobDescription;
     }
 
     public String getCustomerBalance() {

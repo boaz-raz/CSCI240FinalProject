@@ -15,7 +15,7 @@ import java.util.List;
 
 
 /**
- * Created by boazraz on 8/9/16.
+ * Created by Boaz Raz
  */
 public class DataFile {
     private static DataFile instance = new DataFile();
@@ -41,11 +41,11 @@ public class DataFile {
         return invociesData;
     }
 
-    // this was for setting the init data for the txt file
+    // add method to add the invoice
+    public void addNewInvoice(InvoiceData inv){
+        invociesData.add(inv);
+    }
 
-//    public void setInvociesData(List<InvoiceData> invociesData) {
-//        this.invociesData = invociesData;
-//    }
 
     public void loadData() throws IOException {
         invociesData = FXCollections.observableArrayList();
@@ -82,12 +82,13 @@ public class DataFile {
         Path path = Paths.get(flieName);
         BufferedWriter bufferedWriter = Files.newBufferedWriter(path);
         try {
-            // loop of the list of invocies
+            // loop of the list of invoices
             Iterator<InvoiceData> itr = invociesData.iterator();
             while (itr.hasNext()) {
                 InvoiceData inv = itr.next();
                 bufferedWriter.write(String.format("%s\t%s\t%s\t%s\t%s\t%s",
-                        inv.getCustomerName(),inv.getCustomerAddress(),inv.getCustomerPhone(),inv.getJobDescroption(),inv.getCustomerBalance(),inv.getDueDate().format(formatter)));
+                        inv.getCustomerName(),inv.getCustomerAddress(),inv.getCustomerPhone(),
+                        inv.getJobDescription(),inv.getCustomerBalance(),inv.getDueDate().format(formatter)));
                 bufferedWriter.newLine();
             }
 
@@ -98,5 +99,7 @@ public class DataFile {
         }
 
     }
+
+
 
 } // end class
