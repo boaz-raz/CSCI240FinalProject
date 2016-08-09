@@ -13,11 +13,11 @@ public class InvoiceData {
     private String customerAddress;
     private String customerPhone;
     private String jobDescroption;
-    private int customerBalance;
+    private String customerBalance;
     private LocalDate dueDate;
 
 
-    public InvoiceData(String customerName, String customerAddress, String customerPhone, String jobDescroption, int customerBalance, LocalDate dueDate) {
+    public InvoiceData(String customerName, String customerAddress, String customerPhone, String jobDescroption, String customerBalance, LocalDate dueDate) {
         this.customerName = customerName;
         this.customerAddress = customerAddress;
         this.customerPhone = customerPhone;
@@ -58,11 +58,11 @@ public class InvoiceData {
         this.jobDescroption = jobDescroption;
     }
 
-    public int getCustomerBalance() {
+    public String getCustomerBalance() {
         return customerBalance;
     }
 
-    public void setCustomerBalance(int customerBalance) {
+    public void setCustomerBalance(String customerBalance) {
         this.customerBalance = customerBalance;
     }
 
