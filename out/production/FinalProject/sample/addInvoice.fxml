@@ -8,7 +8,7 @@
 <DialogPane fx:controller="sample.AddInvController"
             xmlns:fx="http://javafx.com/fxml">
     <headerText>
-        Enter instructions for the user here
+        Enter new invoice for a customer
     </headerText>
     <content>
         <GridPane vgap="10" hgap="10">

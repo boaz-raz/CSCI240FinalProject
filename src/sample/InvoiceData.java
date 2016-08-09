@@ -17,11 +17,11 @@ public class InvoiceData {
     private LocalDate dueDate;
 
 
-    public InvoiceData(String customerName, String customerAddress, String customerPhone, String jobDescroption, String customerBalance, LocalDate dueDate) {
+    public InvoiceData(String customerName, String customerAddress, String customerPhone, String jobDescription, String customerBalance, LocalDate dueDate) {
         this.customerName = customerName;
         this.customerAddress = customerAddress;
         this.customerPhone = customerPhone;
-        this.jobDescription = jobDescroption;
+        this.jobDescription = jobDescription;
         this.customerBalance = customerBalance;
         this.dueDate = dueDate;
     }
