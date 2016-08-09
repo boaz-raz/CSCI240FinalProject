@@ -76,13 +76,6 @@ public class InvoiceData {
 
     @Override
     public String toString() {
-        return "InvoiceData{" +
-                "customerName='" + customerName + '\'' +
-                ", customerAddress='" + customerAddress + '\'' +
-                ", customerPhone='" + customerPhone + '\'' +
-                ", jobDescroption='" + jobDescroption + '\'' +
-                ", customerBalance=" + customerBalance +
-                ", dueDate=" + dueDate +
-                '}';
+        return customerName;
     }
 }
