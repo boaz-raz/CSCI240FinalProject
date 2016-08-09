@@ -18,7 +18,7 @@ public class Main extends Application {
         primaryStage.setTitle("Invoice Tracker");
         primaryStage.setScene(new Scene(root, 900, 500));
         Label greeting = new Label("Welcome to JavaFX!");
-        greeting.setTextFill(Color.GREEN);
+
         primaryStage.show();
     }
 
