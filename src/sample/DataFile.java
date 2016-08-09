@@ -40,8 +40,10 @@ public class DataFile {
     public List<InvoiceData> getInvociesData() {
         return invociesData;
     }
-//
-//    public void setInvociesData(List<DataFile> invociesData) {
+
+    // this was for setting the init data for the txt file
+
+//    public void setInvociesData(List<InvoiceData> invociesData) {
 //        this.invociesData = invociesData;
 //    }
 

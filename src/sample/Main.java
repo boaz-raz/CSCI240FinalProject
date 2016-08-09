@@ -10,6 +10,8 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
+import java.io.IOException;
+
 public class Main extends Application {
 
     @Override
@@ -25,5 +27,28 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         launch(args);
+    }
+
+
+   // store the items that are hard coded
+    @Override
+    public void stop() throws Exception {
+        try {
+            DataFile.getInstance().storeData(); // store items after closing the app
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
+
+    // load data from file
+    @Override
+    public void init() throws Exception {
+        try {
+            DataFile.getInstance().loadData(); // store items after closing the app
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+
     }
 }

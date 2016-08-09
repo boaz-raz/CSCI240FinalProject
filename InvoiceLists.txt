@@ -1,0 +1,4 @@
+John Smith	123 Main St	317-555-555	3 rooms carpet cleaning	100	08-08=2016
+Jewell Sesco	541 Park St	317-555-555	4 rooms and hall carpet cleaning	200	20-01=2016
+Roosevelt Carlsen	123 Main St	317-555-555	2 rooms carpet cleaning	150	12-02=2016
+Alana Trull	555 Main Ave	317-555-555	5 rooms carpet cleaning	99	04-07=2016
